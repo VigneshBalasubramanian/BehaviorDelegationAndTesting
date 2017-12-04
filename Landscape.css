@@ -1,0 +1,155 @@
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:valid {
+  border: 2px solid black;
+}
+
+li{	        
+    position: relative;
+    animation-name: destination;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	font-weight: bold;
+}
+
+@keyframes destination {
+    from {right: 50px;}
+    to {right: 0px;}
+}
+
+input[type=text] {
+    padding:5px;
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+	background-color: transparent; 
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+input[type=radio]:checked:after {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #D5EE67;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+}
+
+h1{
+	text-shadow: 1px 1px 2px black;	
+	color: #A13EA6;
+	font-size: 180%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+div[id=place_Name]{	
+	color: #261035;
+	font-size: 200%;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+div[id=continent_Name]{
+	color: #18520C;
+	font-size: 160%;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+label[id=destination_Count]{
+	margin-left:34em;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: #8DE7AE;
+	font-size: 125%;
+}
+
+label[type=text]{
+	text-shadow: 1px 1px 2px black;	
+	color: #D2CBD6;
+	font-size: 125%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+label[for=land]{
+	text-shadow: 1px 1px 2px black;	
+	color: #DC783F;
+	font-size: 125%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+label[for=water]{
+	text-shadow: 1px 1px 2px black;	
+	color: #67D0E7;
+	font-size: 125%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+label[for=island]{
+	text-shadow: 1px 1px 2px black;	
+	color: #31E006;
+	font-size: 125%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+legend{
+	text-shadow: 1px 1px 2px black;	
+	font-family: "Arial Black", Gadget, sans-serif;
+	color: #D6CBE8;
+}
+
+button[type=submit] {
+	font-size: 160%;
+	width: 400px;
+	height: 50px;
+	color: #38276F;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: transparent;     
+    cursor:pointer;
+    -webkit-border-radius: 50px;
+}
+
+.land {
+	background-color: #DC783F;
+	opacity:0.8;
+}
+
+.water {
+	background-color: #67D0E7;
+	opacity:0.8;
+}
+
+.island {
+	background-color: #31E006;
+	opacity:0.8;
+}
+
+.place{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;color: #F7F1F0;
+	font-size: 125%;
+}
+
+.continent{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;color: #F7F1F0;
+	font-size: 125%;
+}
+
+ul{
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;	
+}
+
+body {
+    background-image: url("Destination.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;	
+}

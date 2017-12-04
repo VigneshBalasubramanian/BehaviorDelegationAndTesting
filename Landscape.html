@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+	<head>
+		<meta charset = "utf=8">
+		<title data-counter>Destinations!</title>	
+		<link href="Landscape.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<center>
+		<h1>Welcome! Add your dream destinations...</h1>
+		<form class="page" id="form_Landscape" action="#" method="post" data-counter>
+			<div><label id="destination_Count"></label></div>
+			<table style="margin-left:100px" cellspacing="18">
+				<tr>
+					<td><label for="place" type="text">Tourist spot <font color="red">*</font></label></td>
+					<td><input type=text class= "place" autofocus="autofocus" id="place" required></td>
+				</tr>
+				<tr>
+					<td><label for="continent" type="text">Continent  <font color="red">*</font></label></td>
+					<td><input type=text class= "continent" id="continent" required></td>
+				</tr>
+									
+				<tr>
+					<td>
+						<fieldset>
+						<legend>Destination type  <font color="red">*</font></legend>
+							<center>
+							<input type="radio" id="land" name="landscape" value="land" required>
+							<label for="land" type="radio">Land</label>
+							<input type="radio" id="water" name="landscape" value="water" required>
+							<label for="water" type="radio">Water body</label>
+							<input type="radio" id="island" name="landscape" value="island" required>
+							<label for="island" type="radio">Island</label>
+							</center>
+						</fieldset>
+					</td>
+				</tr>					
+				
+				<tr><td>
+				<button type="submit"><b>Add</b>
+				</td></tr>		
+			
+				<tr><td>
+				<div id ="div1">
+				<ul class="ordered_landscape" id="ordered_landscape" style="list-style: none;"></ul>
+				</div>
+				</td></tr>
+			</table>
+		
+		</form>
+		
+		
+		</center>
+		
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="Landscape.js"></script>
+	</body>
+</html>
